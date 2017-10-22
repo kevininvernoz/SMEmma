@@ -1,0 +1,38 @@
+.container-fluid {
+	background-color: black;
+	height: 100vh;
+}
+
+
+.color1 { background-color: #eeeeee; }
+.color2 { background-color: #fcc314; }
+.color3 { background-color: #94ac3c; }
+.color4 { background-color: #295ba7; }
+
+.borde-row {border: 1px white black;}
+
+.borde {border: 2px red black;}
+
+.day {
+	font-size: 20px;
+}
+
+.date {
+	font-size: 20px;
+}
+
+.hour {
+	font-size: 70px;
+}
+.minutes {
+	font-size: 70px;
+}
+
+.seconds {
+	font-size: 40px;
+	color: gray;
+}
+
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
