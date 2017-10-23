@@ -9,12 +9,13 @@
 
 
 	  <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 	<title>InMirror EMMA</title>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+   <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
 
 	<!--Font-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
@@ -25,10 +26,11 @@
 <body>
 
 	<div class="container-fluid text-light">
+    <!-- reloj y fecha -->
 		<div class="row row-top borde-row roboto">
 			<div class="col-md-4 col-top-left borde" id="top-left">
 				<div class="row mx-1 mt-2">
-					<span class="day" id="day">Lunes</span>
+					<span class="day" id="day">Luness</span>
 					<span class="day" id="coma">, &nbsp;</span>
 					<span class="date" id="date">7,mayo de 2017</span>
 				</div>
@@ -41,34 +43,95 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 top-center borde">
+
+      <!-- Centro arriba -->
+			<div class="col-md-4 col-lg-5 top-center borde">
 				<h1>center</h1>
 			</div>
-			<div class="col-md-4 top-right borde">
-				<h1>weather</h1>
+
+
+      <!-- Clima actual -->
+			<div class="col-md-4 col-lg-3 borde">
+				<div class="row mt-1  justify-content-end">
+          <div class="col text-left borde-row">
+            <i class=" wi wi-humidity mx-1"></i>
+  					<span class=" humidity text-left mr-5" id= "humidity">97 %</span>
+            <i class="wi wi-direction-up iconMaxMin align-middle"></i>
+  					<span class=" temp-max text-left mr-5" id="tempMax">24º</span>
+            <i class="wi wi-direction-down left-right iconMaxMin align-middle"></i>
+  					<span class=" temp-min" id= "tempMin">15º</span>
+          </div>
+
+				</div>
+				<div class="row borde-row">
+          <div class="col text-left">
+            <i class=" wi weatherIcon align-middle mt-1 mx-1" id="weatherIcon"></i>
+            <span class=" temp align-middle mx-2" id="temp">23</span>
+          </div>
+				</div>
+
+
+				<div class="row">
+					<span class="col text-left description" id="description">LLueven vergas</span>
+				</div>
+
+        <div class="row">
+          <span class="col divider border border-ligth" style=""></span>
+        </div>
+
 			</div>
+
+
 		</div>
 
-    <!--  -->
 
+    <!--  -->
 		<div class="row row-center borde-row">
 			<div class="col-md-3 col-center-left borde">
 				<div class="row row-center-left-1 borde-row">
-					<h1>sub-left-1</h1>
+					<!--<h1>sub-left-1</h1>-->
 				</div>
 				<div class="row row-center-left-2 borde-row">
-					<h1>sub-left-2</h1>
+					<!--<h1>sub-left-2</h1>-->
 				</div>
 			</div>
 			<div class="col-md-6 col-center borde">
-				<h1>center</h1>
+				<!--<h1>center</h1>-->
 			</div>
 			<div class="col-md-3 col-center-right borde">
 				<div class="row row-center-right-1 borde-row">
-					<h1>sub-right-1</h1>
+					<!--<h1>sub-right-1</h1>-->
+          <div class="col">
+            <div class="row day1 my-1">
+              <span class="text-light align-middle" id="day1Name">mar </span>
+              <i class=" wi forecastIcon align-middle mt-1 mx-1" id="day1Icon"></i>
+              <i class="wi wi-direction-up iconMaxMin align-middle"></i>
+              <span class="text-light align-middle" id="day1Max">max</span>
+              <i class="wi wi-direction-down left-right iconMaxMin align-middle"></i>
+              <span class="text-light align-middle" id="day1Min">min</span>
+            </div>
+            <div class="row day2 my-1">
+              <span class="text-light align-middle" id="day2Name">mar </span>
+              <i class=" wi forecastIcon align-middle mt-1 mx-1" id="day2Icon"></i>
+              <i class="wi wi-direction-up iconMaxMin align-middle"></i>
+              <span class="text-light align-middle" id="day2Max">max</span>
+              <i class="wi wi-direction-down left-right iconMaxMin align-middle"></i>
+              <span class="text-light align-middle" id="day2Min">min</span>
+            </div>
+            <div class="row day2 my-1">
+              <span class="text-light align-middle" id="day3Name">mar </span>
+              <i class=" wi forecastIcon align-middle mt-1 mx-1" id="day3Icon"></i>
+              <i class="wi wi-direction-up iconMaxMin align-middle"></i>
+              <span class="text-light align-middle" id="day3Max">max</span>
+              <i class="wi wi-direction-down left-right iconMaxMin align-middle"></i>
+              <span class="text-light align-middle" id="day3Min">min</span>
+            </div>
+          </div>
+
+
 				</div>
 				<div class="row row-center-right-2 borde-row">
-					<h1>sub-right-2</h1>
+					<!--<h1>sub-right-2</h1>-->
 				</div>
 			</div>
 		</div>
@@ -105,7 +168,7 @@
 
 
 	<script type="text/javascript" src="Plugins/dateTime/dateTime.js"></script>
-
+	<script type="text/javascript" src="Plugins/weather/weather.js"></script>
 
 
 

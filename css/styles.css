@@ -9,9 +9,9 @@
 .color3 { background-color: #94ac3c; }
 .color4 { background-color: #295ba7; }
 
-.borde-row {border: 1px white black;}
+.borde-row {border: 1px solid black;}
 
-.borde {border: 2px red black;}
+.borde {border: 2px solid black;}
 
 .day {
 	font-size: 20px;
@@ -35,4 +35,40 @@
 
 .roboto {
 	font-family: 'Roboto', sans-serif;
+}
+
+.temp {
+	font-size: 70px;
+}
+
+.temp-min {
+	font-size: 20px;
+}
+.temp-max {
+	font-size: 20px;
+}
+
+.weatherIcon {
+	font-size: 100px;
+}
+
+.forecastIcon {
+	font-size: 30px;
+}
+
+.humidity {
+	font-size: 20px;
+}
+
+.description {
+	font-size: 20px;
+}
+
+.iconMaxMin {
+	font-size: 30px;
+}
+
+.divider {
+	width: 100px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
 }

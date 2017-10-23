@@ -1,5 +1,5 @@
 
- 
+
 
 const months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre',
 				'Noviembre','Diciembre'];
@@ -26,7 +26,7 @@ function format(i) {
 
 
 function getTime() {
-	
+
 	var now = new Date(),
 		h = now.getHours();
 		m = now.getMinutes();
@@ -59,8 +59,8 @@ function getDate(){
         };
 }
 
-function displayClock(){    
-    
+function displayClock(){
+
     var time = getTime();
 
     var hourcache = $('#hour').text();
@@ -69,12 +69,12 @@ function displayClock(){
     if (hourcache !== time.hour)
     {
     	$('#hour').text(time.hour);
-    	displayDate();   	
+    	displayDate();
     }
-    
+
     if (minutescache !== time.minutes)
     {
-    	$('#minutes').text(time.minutes); 
+    	$('#minutes').text(time.minutes);
     }
 
 
@@ -83,16 +83,17 @@ function displayClock(){
 
 
 
-    
+
 }
 
 function displayDate(){
     var date = getDate();
     var cacheDate = $('#day').text();
 
+
+
     /* date changed */
     if(cacheDate !== date.day){
-      
       $('#day').fadeOut(fadeValue, function () {
           $(this).text(date.day);
           $(this).fadeIn(fadeValue);
@@ -101,8 +102,8 @@ function displayDate(){
       $('#date').fadeOut(fadeValue, function () {
           $(this).text(date.date + " de " + date.month + " de " + date.year);
           $(this).fadeIn(fadeValue);
-        });        
-    }            
+        });
+    }
 }
 
 displayDate();
@@ -116,7 +117,7 @@ function pulseClockSeparator(){
      $('#separator').fadeOut(separatorFadeValue, function () {
           $(this).text(":");
           $(this).fadeIn(separatorFadeValue);
-        }); 
+        });
 }
 
 
@@ -124,9 +125,9 @@ displayClock();
 displayDate();
 pulseClockSeparator();
 
-/* update 
-setInterval(function(){   
-   pulseClockSeparator();   
+/* update
+setInterval(function(){
+   pulseClockSeparator();
 }, separatorFadeValue * 2);
 
 
@@ -138,7 +139,7 @@ setInterval(function(){
 
 
 /*
- 
+
 const months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre',
 				'Noviembre','Diciembre'];
 
@@ -200,7 +201,7 @@ function displayClock() {
 
 function displayDate() {
 	var time = getDate();
-	
+
 }
 
 
